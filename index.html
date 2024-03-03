@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Awesome Quiz App | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Think and guess. Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector(".button");
+      button.addEventListener("click", (e) => {
+        e.preventDefault;
+        button.classList.add("animate");
+        setTimeout(() => {
+          button.classList.remove("animate");
+        }, 600);
+      });
+    </script>
+    <script src="questions.js"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+</html>
+<h1 style="background-color:rgba(177, 178, 179, 0.001);">THINK & Guess </h1>
+<div id="brain">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg width="639px" height="200px" viewBox="0 0 439 439" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+        <title>Artboard</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Artboard" stroke="#000000">
+                <g id="Group" transform="translate(53.000000, 70.000000)" stroke-width="12">
+                    <path d="M0.120960852,128.014979 C4.24754419,104.559479 11.343363,87.8626878 21.4084172,77.9246054 C36.5059985,63.0174818 65.1451217,28.8817495 74.9517883,26.4686505 C84.7584549,24.0555516 99.1284878,13.0299558 111.445387,18.7074996" id="Path"></path>
+                    <path d="M143.91271,8.50468097 C154.498348,0.353091725 165.735352,-1.68480559 177.623721,2.39098904 C205.986681,-0.0595666097 224.283317,2.7103231 232.513628,10.7006582 C258.305409,21.6151537 271.977732,30.0327488 273.530597,35.9534436" id="Path-2"></path>
+                    <path d="M4.33769417,156.558873 C6.8936364,163.852133 9.37720472,168.247262 11.7883991,169.744259 C15.4051907,171.989755 11.5674682,189.471867 31.2265112,194.768495 C38.5134225,196.72894 43.4773849,197.444426 46.1183982,196.914953 C45.4721118,200.876473 57.6093457,201.452925 82.5300999,198.644309 C94.8895344,204.947189 105.595161,207.452978 114.646981,206.161674" id="Path-6"></path>
+                    <path d="M287.500669,45.941045 C303.714967,57.8014804 311.907187,68.1858687 312.077329,77.0942098 C312.332543,90.4567216 335.366496,108.434023 331.109767,124.864808 C341.697945,149.993796 339.437847,169.479523 324.329473,183.321988" id="Path-3"></path>
+                </g>
+                <path d="M287.667705,278.845223 C303.831214,281.796048 316.377297,284.910031 325.305954,288.187173 C338.698939,293.102886 364.860208,268.025322 354.784996,248.177726 C344.709784,228.33013 326.597965,223.410607 322.354214,224.320995 C318.110462,225.231383 287.001103,209.012006 270.648405,223.410607" id="Path-4" stroke-width="10"></path>
+                <path d="M339.48172,257.582527 C336.050942,252.963293 330.346734,250.583206 322.369096,250.442268 C310.40264,250.23086 291.050233,237.209267 276.834471,243.825767 C262.618709,250.442268 245.812722,229.476685 246.963087,263.178174 C246.236808,271.040267 253.683069,275.52872 269.30187,276.643532" id="Path-5" stroke-width="10"></path>
+                <path d="M107.843282,248.573781 C102.208457,244.996985 99.2024909,240.392353 98.8253847,234.759884 C98.4482785,229.127415 101.454244,222.72662 107.843282,215.557499 C95.4225835,209.85295 91.7181814,203.082326 96.7300756,195.245627 C104.247917,183.490578 82.1886307,163.361104 82.1886307,169.804288 C82.1886307,176.247472 56.1949648,211.272201 82.1886307,222.314938" id="Path-7" stroke-width="10"></path>
+                <path d="M99,151.71056 C104.727698,153.843686 111.838753,151.533434 120.333166,144.779804 C133.074786,134.64936 118.841882,124.410354 137.285805,113.895185 C149.581754,106.885072 159.491903,112.605152 167.016251,131.055423" id="Path-8" stroke-width="10"></path>
+                <path d="M112.119332,168.249959 C127.209295,176.320222 136.735451,182.028206 140.6978,185.373913 C146.641323,190.392473 140.562575,166.055789 157.389221,168.249959 C163.628809,155.599694 159.344781,144.313171 144.537136,134.39039" id="Path-9" stroke-width="10"></path>
+                <path d="M178,164.886233 L194.918357,161.122789 C196.821664,152.269045 199.508387,147.393328 202.978526,146.495638 C206.448666,145.597947 202.285578,140.432735 190.489263,131" id="Path-10" stroke-width="10"></path>
+                <path d="M189.079185,100 C185.865529,111.417128 192.963887,119.169303 210.374259,123.256525 C236.489818,129.387358 249.004793,122.633728 249.004793,114.226926" id="Path-12" stroke-width="10"></path>
+                <path d="M219.5,103.399406 C240.867475,89.1239671 259.960555,91.1663084 276.779239,109.52643" id="Path-13" stroke-width="10"></path>
+                <path d="M150.562926,232.396498 C147.802753,225.090477 154.515849,214.624794 170.702213,200.999451 C184.04314,191.442284 185.937462,184.459502 176.38518,180.051106" id="Path-14" stroke-width="10"></path>
+                <path d="M195.217636,183.852545 C209.78638,172.044168 222.27723,165.6632 232.690187,164.709642 C243.103144,163.756084 248.309623,157.370037 248.309623,145.551503" id="Path-15" stroke-width="10" transform="translate(221.763629, 164.702024) rotate(-14.000000) translate(-221.763629, -164.702024) "></path>
+                <path d="M256.765944,161.974669 C273.460196,156.169519 284.575942,147.120874 290.113182,134.828734 C298.419042,116.390525 297.072506,110.453959 302.09297,107.953249" id="Path-17" stroke-width="10"></path>
+                <path d="M323.056435,216.026227 C318.573061,199.376415 306.80214,193.038618 287.743674,197.012835 C268.49348,189.536736 255.913749,187.938796 250.004482,192.219015" id="Path-19" stroke-width="10" transform="translate(286.530458, 202.953870) rotate(-13.000000) translate(-286.530458, -202.953870) "></path>
+                <path d="M181.721804,228.118721 C187.756774,218.948818 195.011307,214.014694 203.485405,213.31635 C216.196551,212.268832 231.39317,200.414745 234.061483,191.444188" id="Path-20" stroke-width="10" transform="translate(207.891643, 209.781455) rotate(-6.000000) translate(-207.891643, -209.781455) "></path>
+                <path d="M370.960179,202.06269 C367.062145,211.419242 361.337622,215.625817 353.786609,214.682417 C342.46009,213.267316 364.426703,218.38301 362.373394,230.764664" id="Path-22" stroke-width="10"></path>
+                <path d="M131.691152,199 C121.810206,218.646346 120.354475,233.284289 127.323957,242.91383 C137.778179,257.358142 155.726912,253.880384 167.554335,248.397107 C179.381758,242.91383 184.636486,237.640057 193.88892,246.277313" id="Path-23" stroke-width="10"></path>
+                <path d="M189.062044,273.822854 C206.607006,264.863724 217.764653,255.126892 222.534983,244.612358 C229.690479,228.840556 227.770665,223.562973 240.479907,224.463838 C248.952735,225.064415 253.189149,226.766472 253.189149,229.570009" id="Path-24" stroke-width="10"></path>
+                <path d="M314.503121,126 C316.736555,144.263623 312.295082,154.371848 301.178701,156.324674 C295.414182,173.94201 287.687948,181.025132 278,177.574039" id="Path-18" stroke-width="10" transform="translate(296.531802, 152.210997) rotate(9.000000) translate(-296.531802, -152.210997) "></path>
+                <path d="M325.190903,163.719359 C332.501939,171.892533 340.384982,175.066828 348.840034,173.242244 C361.522612,170.505367 344.390943,183.803123 348.840034,196.607593" id="Path-21" stroke-width="10"></path>
+            </g>
+        </g>
+    </svg>
+  </div>
+  
+  <div id="bulb">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg width="194px" height="100px" viewBox="0 0 184 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+        <title>Artboard 2</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Artboard-2" stroke="#000000" stroke-width="5">
+                <path d="M75,159 C84.5642985,167.855013 95.3656344,167.855013 107.404008,159" id="Path-16-Copy"></path>
+                <path d="M75,147 C84.5642985,155.855013 95.3656344,155.855013 107.404008,147" id="Path-16-Copy-2"></path>
+                <path d="M69.0354089,116.714816 C55.2686902,108.789766 46,93.9292355 46,76.9038867 C46,51.5518701 66.5518701,31 91.9038867,31 C117.255903,31 137.807773,51.5518701 137.807773,76.9038867 C137.807773,93.9292355 128.539083,108.789766 114.772364,116.714816 C114.827631,117.362335 114.85583,118.017545 114.85583,118.67932 C114.85583,131.31219 104.579895,141.553153 91.9038867,141.553153 C79.2278784,141.553153 68.9519433,131.31219 68.9519433,118.67932 C68.9519433,118.017545 68.9801426,117.362335 69.0354089,116.714816 Z" id="Combined-Shape" fill="#54DFFF"></path>
+                <polyline id="Path-25" points="77 85.9487932 87.0807456 75.8680476 95.8012527 84.5885548 105.389807 75"></polyline>
+                <path d="M33.0937721,108 L18,116.703917" id="Path-16"></path>
+                <path d="M28.9677787,63.5443205 L11,59" id="Path-26"></path>
+                <path d="M50.271735,23.9049139 L39,13" id="Path-27"></path>
+                <path d="M164.093772,107 L149,115.703917" id="Path-16" transform="translate(156.546886, 111.351958) scale(1, -1) translate(-156.546886, -111.351958) "></path>
+                <path d="M174.967779,64.5443205 L157,60" id="Path-26" transform="translate(165.983889, 62.272160) scale(1, -1) translate(-165.983889, -62.272160) "></path>
+                <path d="M145.271735,23.9049139 L134,13" id="Path-27" transform="translate(140.000000, 18.500000) scale(1, -1) translate(-140.000000, -18.500000) "></path>
+            </g>
+        </g>
+    </svg>
+  </div>
+  <div>
